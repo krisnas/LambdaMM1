@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/fl_ava"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/ColorPrimary">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_account"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="100dp"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="70dp"
+                android:text="11"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="30dp"
+                android:text="Favorite Product"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="220dp"
+                android:text="11"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="180dp"
+                android:text="Ligartani Point"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="330dp"
+                android:text="11"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="315dp"
+                android:text="Coupon"
+                android:textSize="15dp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_myorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="420dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Order"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See all"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/gray"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_payment"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengunggu Bayar"
+                android:layout_marginTop="70dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_courier"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Mengunggu Barang"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_comment"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="300dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mengunggu Komen"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="300dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_os"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="300dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Services"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <Button
+                android:id="@+id/btn_helpcent"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"
+                android:text="Help Center"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_helpcent"
+                android:backgroundTint="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_aboutus"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/black"
+                android:text="About Us"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_aboutus"
+                android:backgroundTint="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_lt_part"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:textColor="@color/black"
+                android:text="Ligar Tani Partner"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_lt_part"
+                android:backgroundTint="@color/white"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

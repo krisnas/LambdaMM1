@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_strw"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/strawberry"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tv_strw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Strawberry"/>
+
+            <TextView
+                android:id="@+id/tv_descstrw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="Rasa asam masin segar pada buah strawberry menjadikan buah ini idola dan pohonnya banyak ditemui di dataran tinggi. Namun apakah Anda tahu kalau cara menanam strawberry tidaklah sulit dan bisa ditanam di pekarangan rumah Anda baik itu di lahan kebun ataupun menggunakan polybag dan pot. Ada beberapa tahapan yang harus dilakukan da lam panduan kali ini, yakni : 1. Pilih Bibit Strawberry = Bibit yang berkualitas benar benar dibutuhkan untuk memastikan hasil panen bisa memiliki kualitas yang baik. Apabila pada tahapan ini Anda salah memilih bibit maka dipastikan akan mempengaruhi hasil panen strawberry Anda. 2. Olah Lahan = Langkah selanjutnya adalah mempersiapkan lahan yang akan dijadikan media tanam. Pada tahap ini Anda bisa menggunakan lahan pekarangan, polybag ataupun more "/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
