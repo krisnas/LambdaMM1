@@ -1,102 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_width="410dp"
+        android:layout_height="143dp"
         android:src="@drawable/header_bg"
-        android:scaleType="fitXY"/>
-    <Button
-        android:id="@+id/btn_produk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Produk"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/white"/>
-    <Button
-        android:id="@+id/btn_kategori"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kategori"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/white"/>
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_tutorial"
+    <TextView
+        android:id="@+id/tv_produk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tutorial"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Produk"
+        android:textStyle="bold"
+        android:textSize="15dp"
         android:textColor="@color/black"
-        android:textAllCaps="false"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/white"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tv_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="Kategori"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tutorial"
+        app:layout_constraintStart_toEndOf="@+id/tv_produk"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tv_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="Tutorial"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="103dp"
         android:src="@drawable/pemotongrumput"
-        android:layout_gravity="center"
-        android:layout_marginBottom="100dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kategori" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/guntingrumput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/arit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/mesintraktor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginEnd="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="80dp"
         android:text="New"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginBottom="40dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.386" />
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="140dp"
-        android:text="See All"
-        android:textSize="20sp"
-        android:layout_marginBottom="40dp"/>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="400dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/white">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_mydata"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="400dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            tools:listitem="list item" />
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="110dp"
-            android:src="@drawable/mesintraktor"
-            android:layout_gravity="left"
-            android:layout_marginLeft="24dp"/>
-
-    </FrameLayout>
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="78dp"
+        android:text="See all"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
 
-
-
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
