@@ -22,8 +22,10 @@ class AccountFragment : Fragment() {
         val button : Button = view.findViewById(R.id.btn_aboutus)
 
         btn_aboutus.setOnClickListener{
-            val i = Intent(requireContext(), AboutUsActivity::class.java)
-            startActivity(i)
+            val i = activity?.supportFragmentManager?.beginTransaction()
+            i?.replace(R.id.fl_fragment, KontakFragment())
+            i?.disallowAddToBackStack()
+            i?.commit()
         }
     }
 }

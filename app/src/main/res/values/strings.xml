@@ -11,27 +11,13 @@
     <string name="hello">Hello</string>
     <string name="title_activity_tutorial">Tentang Kami</string>
     <string name="large_text">
-        <b>1. Kegunaan Aplikasi Kami\n\n</b>
-        Penggunaan aplikasi digital berbasis internet sebagai media untuk
-menyebarluaskan informasi dewasa ini dirasa efektif karena bisa menjangkau
-berbagai kalangan di manapun tempatnya. Pembangunan infrastruktur
-telekomunikasi yang dilakukan juga semakin mempermudah masyarakat desa,
-termasuk petani dalam memanfaatkan layanan ini.
-Perkembangan teknologi informasi dan komunikasi telah memberikan banyak
-perubahan dalam tatanan kehidupan masyarakat, termasuk di sektor pertanian. Hal
-ini bisa menjadi solusi dari hasil penelitian Hafsah (2009), yang menyatakan
-bahwa masih minimnya dan kurangnya rasa keadilan terhadap informasi yang
-diperoleh petani di pedesaan.
-Aplikasi ligar tani merupakan apkikasi yang bergerak pada bidang agrobisnis,
-aplikasi ini dirancang untuk membantu petani mengetahui cara menanam berbagai
-macam tanaman dan dapat melakukan pembelian peralatan, obat-obatan diaplikasi
-yang sama. \n\n
-        <b>2. Konteks Penggunaan</b>
-        Aplikasi Ligar tani digunakan ketika petani ingin mengetahui cara menanam
-sutu tanaman dan akan melakukan pembelian berbagai macam peralatan pertanian
-serta oba-obatan yang dibutuhkan"
+        <b>1. Pilih Bibit Strawberry\n\n</b>
+        Bibit yang berkualitas benar benar dibutuhkan untuk memastikan hasil panen bisa memiliki kualitas yang baik. Apabila pada tahapan ini Anda salah memilih bibit maka dipastikan akan mempengaruhi hasil panen strawberry Anda.\n\n
+        <b>2. Olah Lahan</b>
+        Langkah selanjutnya adalah mempersiapkan lahan yang akan dijadikan media tanam. Pada tahap ini Anda bisa menggunakan lahan pekarangan, polybag ataupun more
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_about_us">ScrollingActivity</string>
+    <string name="title_activity_tutorial_detail">ScrollingActivity</string>
 </resources>

@@ -7,6 +7,7 @@
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LigarTani">
-        <activity android:name=".ProdukActivity"></activity>
+        <activity
+            android:name=".TutorialDetailActivity"
+            android:label="@string/title_activity_tutorial_detail"
+            android:theme="@style/Theme.LigarTani.NoActionBar"></activity>
+        <activity android:name=".ProdukActivity" />
         <activity
             android:name=".AboutUsActivity"
             android:label="@string/title_activity_about_us"
@@ -39,7 +44,6 @@
             android:name=".model.Tutorial"
             android:label="@string/title_activity_tutorial"
             android:theme="@style/Theme.LigarTani.NoActionBar" />
-        <activity android:name=".TutorialDetailActivity" />
         <activity android:name=".OnboardingActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

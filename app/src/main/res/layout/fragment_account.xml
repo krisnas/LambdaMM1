@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -86,6 +87,14 @@
                 android:text="Coupon"
                 android:textSize="15dp"
                 android:textColor="@color/white"/>
+
+             <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="55dp"/>
         </FrameLayout>
 
         <FrameLayout
@@ -103,15 +112,6 @@
                 android:textStyle="bold"
                 android:textSize="18dp"
                 android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="See all"
-                android:layout_marginLeft="300dp"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:textColor="@color/gray"/>
 
             <ImageView
                 android:layout_width="40dp"
