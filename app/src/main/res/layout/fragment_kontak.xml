@@ -37,11 +37,11 @@
 
     <ImageView
         android:id="@+id/iv_telpon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="15dp"
         android:src="@drawable/telpon"
         app:layout_constraintEnd_toStartOf="@+id/iv_pesananda"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +49,9 @@
 
     <ImageView
         android:id="@+id/iv_pesananda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:src="@drawable/pesananda"
@@ -61,10 +61,10 @@
 
     <ImageView
         android:id="@+id/iv_lokasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="136dp"
         android:layout_marginBottom="110dp"
         android:src="@drawable/lokasi"

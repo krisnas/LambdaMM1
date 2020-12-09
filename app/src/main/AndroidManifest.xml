@@ -16,10 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LigarTani">
+        <activity android:name=".PengaturanActivity"></activity>
         <activity
             android:name=".TutorialDetailActivity"
             android:label="@string/title_activity_tutorial_detail"
-            android:theme="@style/Theme.LigarTani.NoActionBar"></activity>
+            android:theme="@style/Theme.LigarTani.NoActionBar" />
         <activity android:name=".ProdukActivity" />
         <activity
             android:name=".AboutUsActivity"

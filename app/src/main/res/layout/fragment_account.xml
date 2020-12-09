@@ -1,207 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AccountFragment">
-    <RelativeLayout
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="130dp"
+        android:background="@color/ColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <FrameLayout
-            android:id="@+id/fl_ava"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:background="@color/ColorPrimary">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_account" />
 
-            <ImageView
-                android:id="@+id/avatar"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="40dp"
-                android:src="@drawable/ic_account"
-                android:background="@color/white"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="100dp"
-                android:text="Profile"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="110dp"
-                android:layout_marginLeft="70dp"
-                android:text="11"
-                android:textSize="15dp"
-                android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_settings" />
+    </FrameLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
-                android:layout_marginLeft="30dp"
-                android:text="Favorite Product"
-                android:textSize="15dp"
-                android:textColor="@color/white"/>
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="110dp"
-                android:layout_marginLeft="220dp"
-                android:text="11"
-                android:textSize="15dp"
-                android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="24dp"
+            android:text="Pesanan Saya"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="150dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
-                android:layout_marginLeft="180dp"
-                android:text="Ligartani Point"
-                android:textSize="15dp"
-                android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_payment" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="110dp"
-                android:layout_marginLeft="330dp"
-                android:text="11"
-                android:textSize="15dp"
-                android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="95dp"
+            android:text="Menunggu"
+            android:textColor="@color/black" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
-                android:layout_marginLeft="315dp"
-                android:text="Coupon"
-                android:textSize="15dp"
-                android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:text="Pembayaran"
+            android:textColor="@color/black" />
 
-             <ImageView
-                android:id="@+id/iv_setting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_settings"
-                android:layout_marginLeft="325dp"
-                android:layout_marginTop="55dp"/>
-        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_courier" />
 
-        <FrameLayout
-            android:id="@+id/fl_myorder"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="95dp"
+            android:text="Menunggu"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="110dp"
+            android:text="Barang"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="95dp"
+            android:text="Menunggu"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="110dp"
+            android:text="Komentar"
+            android:textColor="@color/black"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="24dp"
+            android:text="Layanan Lainya"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_helpcent"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_helpcent"
+            android:text="Help Center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_aboutus"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_aboutus"
+            android:text="About Us"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_lt_part"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="170dp"
-            android:layout_marginBottom="420dp">
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_lt_part"
+            android:text="Ligar Tani Partner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My Order"
-                android:padding="10dp"
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:textColor="@color/black"/>
+    </FrameLayout>
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_payment"
-                android:layout_marginTop="35dp"
-                android:layout_marginLeft="25dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mengunggu Bayar"
-                android:layout_marginTop="70dp"/>
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_courier"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:text="Mengunggu Barang"/>
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_comment"
-                android:layout_marginTop="35dp"
-                android:layout_marginLeft="300dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mengunggu Komen"
-                android:layout_marginTop="70dp"
-                android:layout_marginLeft="300dp"/>
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/fl_os"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="300dp"
-            android:background="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Other Services"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:padding="14dp"/>
-
-            <Button
-                android:id="@+id/btn_helpcent"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:textColor="@color/black"
-                android:text="Help Center"
-                android:textAllCaps="false"
-                android:drawableLeft="@drawable/ic_helpcent"
-                android:backgroundTint="@color/white"/>
-
-            <Button
-                android:id="@+id/btn_aboutus"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:textColor="@color/black"
-                android:text="About Us"
-                android:textAllCaps="false"
-                android:drawableLeft="@drawable/ic_aboutus"
-                android:backgroundTint="@color/white"/>
-
-            <Button
-                android:id="@+id/btn_lt_part"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="160dp"
-                android:textColor="@color/black"
-                android:text="Ligar Tani Partner"
-                android:textAllCaps="false"
-                android:drawableLeft="@drawable/ic_lt_part"
-                android:backgroundTint="@color/white"/>
-
-        </FrameLayout>
-
-    </RelativeLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
