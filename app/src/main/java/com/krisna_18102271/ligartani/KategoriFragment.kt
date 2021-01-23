@@ -6,6 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.tv_kategori
+import kotlinx.android.synthetic.main.fragment_home.tv_produk
+import kotlinx.android.synthetic.main.fragment_home.tv_tutorial
+import kotlinx.android.synthetic.main.fragment_kategori.*
+import kotlinx.android.synthetic.main.fragment_kategori.btn_alattani
+import kotlinx.android.synthetic.main.fragment_kategori.btn_pupuk
+import kotlinx.android.synthetic.main.fragment_produk.*
 
 class KategoriFragment : Fragment() {
 
@@ -32,6 +39,20 @@ class KategoriFragment : Fragment() {
         tv_tutorial.setOnClickListener {
             val i = activity?.supportFragmentManager?.beginTransaction()
             i?.replace(R.id.fl_fragment, TutorialFragment())
+            i?.disallowAddToBackStack()
+            i?.commit()
+        }
+
+        btn_alattani.setOnClickListener {
+            val i = activity?.supportFragmentManager?.beginTransaction()
+            i?.replace(R.id.fl_fragment, AlatTaniFragment())
+            i?.disallowAddToBackStack()
+            i?.commit()
+        }
+
+        btn_pupuk.setOnClickListener {
+            val i = activity?.supportFragmentManager?.beginTransaction()
+            i?.replace(R.id.fl_fragment, PupukFragment())
             i?.disallowAddToBackStack()
             i?.commit()
         }

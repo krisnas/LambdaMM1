@@ -35,14 +35,7 @@ class TutorialFragment : Fragment() {
         tutorialAdapter = TutorialAdapter(activity!!)
         rv_tutorial.adapter = tutorialAdapter
 
-        addTutorialList.add(Tutorial("Strawberry A", "Ini adalah tutorial dari menanam strawberry A"))
-        addTutorialList.add(Tutorial("Strawberry B", "Ini adalah tutorial dari menanam strawberry B"))
-        addTutorialList.add(Tutorial("Strawberry C", "Ini adalah tutorial dari menanam strawberry C"))
-        addTutorialList.add(Tutorial("Strawberry D", "Ini adalah tutorial dari menanam strawberry D"))
-        addTutorialList.add(Tutorial("Strawberry E", "Ini adalah tutorial dari menanam strawberry E"))
-        addTutorialList.add(Tutorial("Strawberry F", "Ini adalah tutorial dari menanam strawberry F"))
-        addTutorialList.add(Tutorial("Strawberry G", "Ini adalah tutorial dari menanam strawberry G"))
-
+        addTutorialList.add(Tutorial("Strawberry", "Ini adalah tutorial dari menanam strawberry"))
         tutorialAdapter.setTutorial(addTutorialList)
     }
 }

@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_alattani"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
@@ -75,13 +75,13 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_produk" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_pupuk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         android:layout_marginBottom="366dp"
         android:backgroundTint="@color/white"
-        android:text="Tutorial"
+        android:text="Pupuk"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:drawableRight="@drawable/vector"

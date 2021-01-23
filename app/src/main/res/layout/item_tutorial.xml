@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_tutorial"
+        android:id="@+id/cv_tutorialstroberi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
@@ -41,9 +42,96 @@
                 android:layout_marginBottom="10dp"
                 android:textSize="15sp"
                 android:textColor="@color/black"
-                android:text="Rasa asam masin segar pada buah strawberry menjadikan buah ini idola dan pohonnya banyak ditemui di dataran tinggi. Namun apakah Anda tahu kalau cara menanam strawberry tidaklah sulit dan bisa ditanam di pekarangan rumah Anda baik itu di lahan kebun ataupun menggunakan polybag dan pot. Ada beberapa tahapan yang harus dilakukan da lam panduan kali ini, yakni : 1. Pilih Bibit Strawberry = Bibit yang berkualitas benar benar dibutuhkan untuk memastikan hasil panen bisa memiliki kualitas yang baik. Apabila pada tahapan ini Anda salah memilih bibit maka dipastikan akan mempengaruhi hasil panen strawberry Anda. 2. Olah Lahan = Langkah selanjutnya adalah mempersiapkan lahan yang akan dijadikan media tanam. Pada tahap ini Anda bisa menggunakan lahan pekarangan, polybag ataupun more "/>
+                android:text="Ini adalah cara menanam Strawberry"/>
 
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_tutorialjeruk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_orange"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/orange" />
+
+            <TextView
+                android:id="@+id/tv_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Jeruk"/>
+
+            <TextView
+                android:id="@+id/tv_descorange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="Ini adalah cara menanam Jeruk"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_tutorialkangkung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_kangkung"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/kangkung" />
+
+            <TextView
+                android:id="@+id/tv_kangkung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Kangkung"/>
+
+            <TextView
+                android:id="@+id/tv_desckangkung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="Ini adalah cara menanam Kangkung"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

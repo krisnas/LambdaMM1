@@ -39,5 +39,12 @@ class HomeFragment : Fragment() {
             i?.disallowAddToBackStack()
             i?.commit()
         }
+
+        imageView8.setOnClickListener {
+            val i = activity?.supportFragmentManager?.beginTransaction()
+            i?.replace(R.id.fl_fragment, DetailProdukFragment())
+            i?.disallowAddToBackStack()
+            i?.commit()
+        }
     }
 }

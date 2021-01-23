@@ -9,10 +9,10 @@
     tools:showIn="@layout/activity_about_us">
 
     <TextView
-        android:id="@+id/tutorjeruk"
+        android:id="@+id/tutorstrw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:text="@string/teksjeruk" />
+        android:text="@string/tekstrw" />
 
 </androidx.core.widget.NestedScrollView>

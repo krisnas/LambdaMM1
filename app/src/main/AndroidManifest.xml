@@ -16,9 +16,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LigarTani">
-        <activity android:name=".PengaturanActivity"></activity>
         <activity
-            android:name=".TutorialDetailActivity"
+            android:name=".KangkungDetailActivity"
+            android:label="@string/title_activity_kangkung_detail"
+            android:theme="@style/Theme.LigarTani.NoActionBar"></activity>
+        <activity
+            android:name=".OrangeDetailActivity"
+            android:label="@string/title_activity_orange_detail"
+            android:theme="@style/Theme.LigarTani.NoActionBar" />
+        <activity android:name=".PengaturanActivity" />
+        <activity
+            android:name=".StrawberryDetailActivity"
             android:label="@string/title_activity_tutorial_detail"
             android:theme="@style/Theme.LigarTani.NoActionBar" />
         <activity android:name=".ProdukActivity" />
