@@ -7,4 +7,6 @@
     <color name="gray">#A0A0A0</color>
     <color name="lightgray">#C2C2C2</color>
     <color name="red">#CB3535</color>
+    <color name="yelolight">#FFF1D4</color>
+    <color name="transparent">#00000000</color>
 </resources>

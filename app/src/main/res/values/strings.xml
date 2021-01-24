@@ -9,6 +9,14 @@
     <string name="favorite">Favorite</string>
     <string name="account">Account</string>
     <string name="hello">Hello</string>
+    <string name="detailpembayaran">
+        Batas waktu pembayaran adalah 1x24 jam, akan dibatalkan otomatis jika pembayaran tidak dilakukan daam jangka waktu yang ditentukan
+    </string>
+    <string name="detail2">
+        <b>Pembayaran transfer bank dengan metode Virtual Account</b>\n\n
+        1. Minimum Pembayarn Rp. 5000 untuk mengunakan transfer bank\n
+        2. Dana yang ditransfer ke Kubik Store akan dijaga sampai proses transaksi selesai
+    </string>
     <string name="title_activity_tutorial">Tentang Kami</string>
     <string name="tekstrw">
         <b><h1>CARA MENANAM STRAWBERRY</h1></b>\n\n
