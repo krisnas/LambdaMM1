@@ -43,5 +43,12 @@ class DetailProdukFragment : Fragment() {
             i?.disallowAddToBackStack()
             i?.commit()
         }
+
+        btn_buynow.setOnClickListener {
+            val i = activity?.supportFragmentManager?.beginTransaction()
+            i?.replace(R.id.fl_fragment, PembayaranFragment())
+            i?.disallowAddToBackStack()
+            i?.commit()
+        }
     }
 }
