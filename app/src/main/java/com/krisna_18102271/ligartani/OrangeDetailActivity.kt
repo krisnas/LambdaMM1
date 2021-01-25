@@ -29,4 +29,8 @@ class OrangeDetailActivity : AppCompatActivity() {
             startActivity(Intent.createChooser(sharingIntent, "Share via"))
         }
     }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

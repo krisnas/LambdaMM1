@@ -37,4 +37,8 @@ class StrawberryDetailActivity : AppCompatActivity() {
             tv_descstrw.text = x?.getString("description")
         }
     }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

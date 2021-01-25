@@ -1,10 +1,11 @@
 package com.krisna_18102271.ligartani
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_detail_pembayaran.*
 
 class DetailPembayaranFragment : Fragment() {
@@ -19,6 +20,13 @@ class DetailPembayaranFragment : Fragment() {
         backto.setOnClickListener {
             val i = activity?.supportFragmentManager?.beginTransaction()
             i?.replace(R.id.fl_fragment, PembayaranFragment())
+            i?.disallowAddToBackStack()
+            i?.commit()
+        }
+
+        btn_next.setOnClickListener {
+            val i = activity?.supportFragmentManager?.beginTransaction()
+            i?.replace(R.id.fl_fragment, KonfirmasiPembayaranFragment())
             i?.disallowAddToBackStack()
             i?.commit()
         }

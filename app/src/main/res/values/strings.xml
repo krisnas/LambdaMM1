@@ -9,6 +9,9 @@
     <string name="favorite">Favorite</string>
     <string name="account">Account</string>
     <string name="hello">Hello</string>
+    <string name="prosesdon">
+        Pesanan Anda\n Sedang di Proses
+    </string>
     <string name="detailpembayaran">
         Batas waktu pembayaran adalah 1x24 jam, akan dibatalkan otomatis jika pembayaran tidak dilakukan daam jangka waktu yang ditentukan
     </string>
