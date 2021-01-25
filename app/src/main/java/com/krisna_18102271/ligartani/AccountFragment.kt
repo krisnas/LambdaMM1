@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_account.*
 
@@ -28,10 +29,18 @@ class AccountFragment : Fragment() {
             i?.commit()
         }
         iv_setting.setOnClickListener {
-            val i = activity?.supportFragmentManager?.beginTransaction()
-            i?.replace(R.id.fl_fragment, PengaturanFragment())
-            i?.disallowAddToBackStack()
-            i?.commit()
+            val i = Intent (requireActivity(), DashboardActivity::class.java)
+            startActivity(i)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
     }
 }

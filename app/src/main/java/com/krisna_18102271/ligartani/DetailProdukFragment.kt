@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import kotlinx.android.synthetic.main.fragment_detail_produk.*
-import kotlinx.android.synthetic.main.fragment_pengaturan.*
 
 class DetailProdukFragment : Fragment() {
 
