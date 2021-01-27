@@ -21,6 +21,8 @@ class OnboardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding)
 
+        supportActionBar?.hide()
+
         pre = SharedPreferences(this)
         wkAdapter = OnboardingAdapter(this)
         vp_onboarding.adapter = wkAdapter
@@ -54,7 +56,7 @@ class OnboardingActivity : AppCompatActivity() {
             vp_onboarding.currentItem += 1
             } else {
                 pre.stInst = true
-                val intent = Intent (this, MainActivity::class.java)
+                val intent = Intent (this, SignInActivity::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -62,7 +64,7 @@ class OnboardingActivity : AppCompatActivity() {
 
         tv_skip.setOnClickListener {
             pre.stInst = true
-            val intent = Intent (this, MainActivity::class.java)
+            val intent = Intent (this, SignInActivity::class.java)
             startActivity(intent)
             finish()
         }

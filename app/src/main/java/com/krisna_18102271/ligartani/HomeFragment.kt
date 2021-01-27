@@ -1,5 +1,6 @@
 package com.krisna_18102271.ligartani
 
+import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,7 +15,11 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         getActivity()?.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
+
         return inflater.inflate(R.layout.fragment_home, container, false)
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -46,15 +51,11 @@ class HomeFragment : Fragment() {
             i?.disallowAddToBackStack()
             i?.commit()
         }
+
+        btn_setting.setOnClickListener {
+            val i = Intent (requireActivity(), SettingActivity::class.java)
+            startActivity(i)
+        }
     }
 
-    override fun onResume() {
-        super.onResume()
-        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
-    }
-
-    override fun onStop() {
-        super.onStop()
-        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
-    }
 }

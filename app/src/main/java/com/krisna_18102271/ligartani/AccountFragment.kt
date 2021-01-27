@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_account.*
 class AccountFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
         return inflater.inflate(R.layout.fragment_account, container, false)
     }
 
@@ -32,15 +32,5 @@ class AccountFragment : Fragment() {
             val i = Intent (requireActivity(), DashboardActivity::class.java)
             startActivity(i)
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
-    }
-
-    override fun onStop() {
-        super.onStop()
-        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
     }
 }

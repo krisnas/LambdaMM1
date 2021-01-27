@@ -16,7 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LigarTani">
-        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".DashboardActivity" />
         <activity android:name=".SettingPreferenceActivity" />
         <activity android:name=".PembayaranSelesaiActivity" />
         <activity android:name=".ProsesSelesaiActivity" />
@@ -35,6 +38,7 @@
             android:label="@string/title_activity_tutorial_detail"
             android:theme="@style/Theme.LigarTani.NoActionBar" />
         <activity android:name=".ProdukActivity" />
+
         <activity
             android:name=".AboutUsActivity"
             android:label="@string/title_activity_about_us"

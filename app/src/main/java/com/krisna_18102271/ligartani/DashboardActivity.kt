@@ -27,6 +27,14 @@ class DashboardActivity : AppCompatActivity() {
         supportActionBar?.title = getString(R.string.main_title)
         mSettingPreference = SettingPreference(this)
         showExistingPreference()
+
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        val actionbar = supportActionBar
+
+        actionbar?.setDisplayHomeAsUpEnabled(true)
+
     }
 
     private fun showExistingPreference() {
@@ -74,5 +82,10 @@ class DashboardActivity : AppCompatActivity() {
                 startActivityForResult(intent, REQUEST_CODE)
             }
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
