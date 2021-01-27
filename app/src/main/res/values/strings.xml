@@ -98,4 +98,10 @@
     <string name="field_digit_only">Kolom Hanya Untuk Angka</string>
     <string name="main_title">Profile</string>
     <string name="act_setting">Setting</string>
+    <string name="title">Judul</string>
+    <string name="description">Deskripsi</string>
+    <string name="category">Kategori</string>
+    <string name="submit">Simpan</string>
+    <string name="delete">Hapus</string>
+    <string name="date">Tanggal</string>
 </resources>

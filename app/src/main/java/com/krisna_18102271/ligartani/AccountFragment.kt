@@ -32,5 +32,10 @@ class AccountFragment : Fragment() {
             val i = Intent (requireActivity(), DashboardActivity::class.java)
             startActivity(i)
         }
+
+        btn_troli.setOnClickListener {
+            val i = Intent (requireActivity(), DashboardQuoteActivity::class.java)
+            startActivity(i)
+        }
     }
 }
