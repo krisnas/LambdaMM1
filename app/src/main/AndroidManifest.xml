@@ -8,15 +8,19 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".LigarTani"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LigarTani">
-        <activity android:name=".PhoneAuthActivity"></activity>
+        <activity android:name=".CekKoneksiActivity"></activity>
+        <activity android:name=".PhoneAuthActivity" />
         <activity android:name=".QuoteAddUpdateActivity" />
         <activity android:name=".DashboardQuoteActivity" />
         <activity android:name=".SettingActivity" />
@@ -73,6 +77,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <receiver
+            android:name=".ConnectionReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

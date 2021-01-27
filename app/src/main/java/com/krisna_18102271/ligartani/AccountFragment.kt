@@ -37,5 +37,10 @@ class AccountFragment : Fragment() {
             val i = Intent (requireActivity(), DashboardQuoteActivity::class.java)
             startActivity(i)
         }
+
+        btn_cekkoneksi.setOnClickListener {
+            val i = Intent (requireActivity(), CekKoneksiActivity::class.java)
+            startActivity(i)
+        }
     }
 }

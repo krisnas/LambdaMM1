@@ -184,13 +184,13 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/btn_lt_part"
+            android:id="@+id/btn_cekkoneksi"
             android:layout_width="375dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="170dp"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/ic_lt_part"
-            android:text="Ligar Tani Partner"
+            android:text="Cek Koneksi"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:textAllCaps="false"
